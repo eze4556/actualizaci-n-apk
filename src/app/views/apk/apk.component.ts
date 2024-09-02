@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { AlertController, ToastController, IonicModule } from '@ionic/angular';
+import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonInput, IonItem, IonLabel, IonList, IonSelect, IonSelectOption, IonTextarea, IonToolbar, IonTitle, IonBackButton, IonButtons, ToastController, IonIcon, IonHeader, IonText } from '@ionic/angular/standalone';
 import { FirestoreService } from './../../common/services/firestore.service';
 import { Categoria } from './../../common/models/categoria.models';
 import { Observable } from 'rxjs';
@@ -11,7 +11,27 @@ import { v4 as uuidv4 } from 'uuid';
 @Component({
   selector: 'app-apk',
   standalone: true,
-  imports: [CommonModule, FormsModule, IonicModule],
+  imports: [IonText, IonHeader,  CommonModule,
+    FormsModule,
+
+    IonButton,
+    IonCard,
+    IonCardHeader,
+    IonCardTitle,
+    IonCardContent,
+    IonContent,
+    IonItem,
+    IonLabel,
+    IonInput,
+    IonTextarea,
+    IonSelect,
+    IonSelectOption,
+    IonList,
+    IonToolbar,
+    IonTitle,
+    IonBackButton,
+    IonButtons,
+    IonIcon],
   templateUrl: './apk.component.html',
   styleUrls: ['./apk.component.scss'],
 })
